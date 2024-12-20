@@ -1,6 +1,6 @@
 // lib/vectorStore.ts
-import { Pinecone, PineconeRecord, RecordMetadata } from '@pinecone-database/pinecone';
-import {pinecone} from './pineconeClient';
+import { PineconeRecord, RecordMetadata } from '@pinecone-database/pinecone';
+import { pinecone } from './pineconeClient';
 import { OpenAI } from 'openai';
 
 const openai = new OpenAI({
