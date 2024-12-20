@@ -37,7 +37,7 @@ export default function ChatInterface() {
     const response = await axios.post('/api/send',
       {
         input,
-        ns: localStorage.getItem("projectName") as string
+        ns: localStorage.getItem("projectName")?.trim() as string
       },
       {
         headers: {
